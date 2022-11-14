@@ -33,18 +33,23 @@ createApp({
     methods: {
         prevSlide(){
             if(this.activeImage === 0){
-                console.log();
-                this.activeImage = this.slides.lenght - 1;
+                this.activeImage = this.slides.length - 1;
             }else{
                 this.activeImage--;
             }
         }, 
         nextSlide(){
-            if(this.activeImage === this.this.slides.lenght - 1){
+            if(this.activeImage === this.slides.length - 1){
                 this.activeImage = 0;
             }else{
                 this.activeImage++;
             }
+        }, 
+        changeSlide(index){
+            this.activeImage = index
+        },
+        mounted(){
+            setInterval(this.nextSlide, 3000)
         }
     }
 }).mount('#app');

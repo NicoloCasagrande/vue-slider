@@ -23,18 +23,16 @@
                         </p>
                     </div>
                 </div>
-
                 <div class="thumbs">
                     <div @click = "prevSlide" class="prev"></div>
                     <div @click = "nextSlide"class="next"></div>
-                    <div v-for="(thumb, index) in slides" class="thumb" :class="slides.activeImage === index ? 'active' : '' ">
+                    <div v-for="(thumb, index) in slides" class="thumb" :class="slides.activeImage === index ? 'active' : ''" @click="changeSlide(index)">
                         <img :src="thumb.image" alt="thumb.title"/>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
     <script src="./js/script.js"></script>
 </body>

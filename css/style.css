@@ -49,8 +49,7 @@
     height: 100%;
     object-fit: cover;
 }
-
-.active {
+.thumb.active {
     border: 2px solid #ccc;
     opacity: 1;
 }
