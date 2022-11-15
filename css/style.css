@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+h3{
+    cursor: pointer;
+}
+
+p{
+    cursor: pointer;
+}
+
 .container {
     height: 100vh;
     display: flex;
@@ -43,6 +51,7 @@
 .thumb {
     height: calc((300px) / 5);
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .thumb img {
