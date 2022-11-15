@@ -49,14 +49,14 @@ createApp({
         changeSlide(index){
             this.activeImage = index
         },
-        mounted(){
+        created(){
             this.startPreview()
         },
         stopPreview(){
             clearInterval(this.timer)
         }, 
         startPreview(){
-            this.timer = setInterval(this.nextSlide, 3000)
+            this.timer = window.setInterval(this.nextSlide, 3000)
         }
     }
 }).mount('#app');

@@ -16,6 +16,7 @@
     width: 700px;
     height: 300px;
     position: relative;
+    z-index: 100;
 }
 
 .item img {
