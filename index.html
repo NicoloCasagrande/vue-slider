@@ -14,7 +14,7 @@
     <div id="app">
         <div class="container">
             <div class="slider-wrapper" tabindex="0">
-                <div class="item" @mouseover="stopPreviw" @mouseout="startPreview">
+                <div class="item" @mouseover="stopPreview" @mouseout="startPreview">
                     <img :src="slides[activeImage].image" alt="slides[activeImage].title" />
                     <div class="text">
                         <h3>{{slides[activeImage].title}}</h3>
