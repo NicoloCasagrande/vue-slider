@@ -47,7 +47,9 @@ createApp({
             }
         }, 
         changeSlide(index){
-            this.activeImage = index
+            this.activeImage = index;
+            this.stopPreview();
+            this.startPreview();
         },
         
         stopPreview(){
